@@ -9,6 +9,7 @@ import LoginScreen from './screens/LoginScreen';
 import Modal from 'react-native-modal';
 import {Button} from 'native-base';
 import AddressModal from './components/AddressModal';
+import ItemScreen from "./screens/ItemScreen";
 
 export default class RootStack extends React.Component {
     state = {isShowAddress: false}
@@ -47,6 +48,8 @@ export default class RootStack extends React.Component {
                                       name="ios-navigate" size={28} color="white"/>)
                     }}
                     />
+
+                    <Stack.Screen name="Item" component={ItemScreen} options={{headerShown: false}} />
                 </Stack.Navigator>
             </NavigationContainer>
 
