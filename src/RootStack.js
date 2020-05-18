@@ -10,6 +10,7 @@ import Modal from 'react-native-modal';
 import {Button} from 'native-base';
 import AddressModal from './components/AddressModal';
 import ItemScreen from "./screens/ItemScreen";
+import MainScreen from './screens/MainScreen';
 
 export default class RootStack extends React.Component {
     state = {isShowAddress: false}
@@ -29,6 +30,7 @@ export default class RootStack extends React.Component {
         return (
             <NavigationContainer>
                 <AddressModal show={this.state.isShowAddress}></AddressModal>
+              
                 <Stack.Navigator
                     screenOptions={{
                         headerStyle: {
@@ -41,7 +43,9 @@ export default class RootStack extends React.Component {
                         },
                     }}
                 >
+                      {/* <Stack.Screen name="Login" component={LoginScreen} options={{headerShown: false}} /> */}
                     {/* <Stack.Screen name="Login" component={LoginScreen}/> */}
+                    <Stack.Screen name="Category" component={MainScreen} options={{headerShown: true}} />
                     <Stack.Screen name="Home" component={HomeScreen} options={{
                         headerLeft: () => (
                             <Ionicons onPress={() => this.showAddress(true)} style={{marginLeft: 10}}

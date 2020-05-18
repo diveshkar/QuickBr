@@ -23,12 +23,10 @@ export default class ItemScreen extends React.Component  {
             <View style={styles.container}>
                 <Image style={styles.stretch} source={{uri: "https://i0.wp.com/hmhub.me/wp-content/uploads/2019/08/61a5bc5c144dbfcb481874823cbbf9071438338557.jpg"}}/>
                 <Text style={{paddingTop:18, textAlign: 'center', fontWeight: 'bold', fontSize: 24}}>{shopName}</Text>
-                <CardList></CardList>
-                <CardList></CardList>
-                <CardList></CardList>
-            </View>
-
-            
+                <CardList name = "Bread" note="Rs 65.00" qty="Qty 1"></CardList>
+                <CardList name = "Bun" note="Rs 15.00" qty="Qty 1"></CardList>
+                <CardList name = "Seeni Roll" note="Rs 30.00" qty="Qty 1"></CardList>
+            </View> 
         );
     }
 }

@@ -1,24 +1,23 @@
 import React, { Component } from 'react';
 import { Right, Left, Thumbnail, Body, Header, Content, List, ListItem, Text, Separator } from 'native-base';
+import {Button} from 'native-base';
 export default class ListSeparatorExample extends Component {
   render() {
     return (
-     
         <List>
-          <ListItem avatar>
+          <ListItem avatar >
             <Left>
-              <Thumbnail source={{ uri: 'https://akm-img-a-in.tosshub.com/sites/btmt/images/stories/kingfisher-beer_660_041918082956_061218081850.jpg' }} />
+              <Thumbnail source={{ uri: this.props.image }} />
             </Left>
-            <Body>
-              <Text>Kumar Pratik</Text>
-              <Text note>Doing what you like will always keep you happy . .</Text>
+            <Body style={{marginTop: 5}}>
+              <Text onPress={()=>{this.props.navigation.navigate('Home')}}>{this.props.name}</Text>
+              <Text note onPress={()=>{this.props.navigation.navigate('Home')}}>{this.props.note} </Text>
             </Body>
             <Right>
-              <Text note>3:43 pm</Text>
+              <Text note>{this.props.qty}</Text>
             </Right> 
           </ListItem>
         </List>
-
     );
   }
 }

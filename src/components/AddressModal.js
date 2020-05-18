@@ -3,6 +3,7 @@ import Modal from 'react-native-modal';
 import {View, Text} from 'react-native';
 import {Ionicons, Entypo} from '@expo/vector-icons';
 import environment from '../../environment'
+import { Button } from 'native-base';
 
 export default class AddressModal extends Component {
 
@@ -61,6 +62,11 @@ export default class AddressModal extends Component {
                     }}>
                         <Text><Entypo name="address" size={24} color={environment['dark'].maincolor}/> No : 422, Ambal
                             street, Anpuvalipuram</Text>
+                            <Button style={{marginTop: 20, backgroundColor: environment['dark'].maincolor}}>
+                                <Text style={{width: '40%' ,textAlign:'center', color: '#ffffff'}}>
+                                    Set Address
+                                </Text>
+                            </Button>
                     </View>
                 </View>
             </Modal>

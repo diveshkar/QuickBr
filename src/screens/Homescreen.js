@@ -8,10 +8,10 @@ export default class HomeScreen extends React.Component {
 
     data = [{
         id: 1,
-        shopName: "Andrathapura Junction",
+        shopName: "Lucky Pharmacy",
         rating: 4,
         distance: 5,
-        mainImage: "https://i0.wp.com/hmhub.me/wp-content/uploads/2019/08/61a5bc5c144dbfcb481874823cbbf9071438338557.jpg",
+        mainImage: "https://colombotimes.net/wp-content/uploads/2020/04/big-pharmacy.jpg",
         logo: "https://www.tailorbrands.com/wp-content/uploads/2020/01/beer-city-logo.png",
     }, {
         id: 2,
