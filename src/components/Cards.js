@@ -20,7 +20,7 @@ export default class Cards extends Component {
                             source={{uri: this.props.mainImage}}
                             style={{height: 200, width: null, flex: 1}}/>
                     </CardItem>
-                    <CardItem button onPress={() => {this.props.navigation.navigate('Item', {shopName: this.props.shopName})}}>
+                    <CardItem button onPress={() => {this.props.navigation.navigate('Item', {shopName: this.props.shopName, mainImage: this.props.mainImage})}}>
 
                         <Left>
                             <Thumbnail

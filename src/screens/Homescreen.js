@@ -15,11 +15,11 @@ export default class HomeScreen extends React.Component {
         logo: "https://www.tailorbrands.com/wp-content/uploads/2020/01/beer-city-logo.png",
     }, {
         id: 2,
-        shopName: "Linganagar beer",
+        shopName: "Backery",
         rating: 5,
         distance: 7,
-        mainImage: "https://i0.wp.com/hmhub.me/wp-content/uploads/2019/08/61a5bc5c144dbfcb481874823cbbf9071438338557.jpg",
-        logo: "https://www.tailorbrands.com/wp-content/uploads/2020/01/beer-city-logo.png",
+        mainImage: "https://www.lhtc.edu.np/wp-content/uploads/2018/09/bakery.jpg",
+        logo: "https://i.pinimg.com/originals/44/fa/b7/44fab70348c532174bf51070ec9fbd25.jpg",
     },
         {
             id: 3,
