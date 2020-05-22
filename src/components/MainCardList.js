@@ -10,7 +10,7 @@ export default class MainCardList extends Component {
               <Thumbnail source={{ uri: this.props.image }} />
             </Left>
             <Body style={{marginTop: 5}}>
-              <Text onPress={()=>{this.props.navigation.navigate('Home')}}>{this.props.name}</Text>
+              <Text onPress={()=>{this.props.navigation.navigate('Home', {cat : this.props.name})}}>{this.props.name}</Text>
               <Text note onPress={()=>{this.props.navigation.navigate('Home')}}>{this.props.note} </Text>
             </Body>
             <Right>
